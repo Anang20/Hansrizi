@@ -112,39 +112,85 @@
                 <hr class="w-40 my-8 border-spacing-0.5 border-green-400">
             </div>
             <div>
-                <div class="">
-                    <!--<div class="w-2/12 flex items-center">
+                <div class="flex relative group">
+                    <div class="w-1/12 flex items-center hidden group-hover:flex">
                         <div class="w-full text-right">
-                            <button>
+                            <button onclick="prev()">
                                 <img src="image/left-arrow.png" width="20" height="20" alt="">
                             </button>
                         </div>
-                    </div>-->
-                    <div id="sliderContainer" class="w-full">
-
-                        <ul id="slider" class="flex w-full ">
-                            <li class="flex-col md:flex-row items-center gap-4 justify-center">
-                                <div class="mb-2 mx-auto lg:mr-10 items-center w-60 lg:w-96">
-                                    <image src="image/about.png"></image>
+                    </div>
+                    <div id="sliderContainer" class="w-10/12 overflow-hidden">
+                        <ul id="slider" class="flex w-full flex overflow-hidden transition-all">
+                            <li class="w-full p-5 mx-auto">
+                                <div class="flex w-full flex-col md:flex-row items-center gap-4 justify-center">
+                                    <div class="mb-2 mx-auto lg:mr-10 items-center w-60 lg:w-96">
+                                        <image src="image/about.png"></image>
+                                    </div>
+                                    <div class="items-center py-10">
+                                        <h1 class="text-4xl font-medium text-green-700 mb-3">Corcola Fruit</h1>
+                                        <p class="text-[14px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur eligendi facilis illum magnam officia perferendis, porro quisquam quos soluta! Consectetur ea eum odit vel.</p>
+                                        <p class="text-[14px] mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta minus reprehenderit suscipit!</p>
+                                        <button class="rounded-full border border-green-600 px-4 py-2">
+                                            <p class="text-green-700 font-medium">Contact Us</p>
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="items-center py-10">
-                                    <h1 class="text-4xl font-medium text-green-700 mb-3">Corcola Fruit</h1>
-                                    <p class="text-[14px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur eligendi facilis illum magnam officia perferendis, porro quisquam quos soluta! Consectetur ea eum odit vel.</p>
-                                    <p class="text-[14px] mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta minus reprehenderit suscipit!</p>
-                                    <button class="rounded-full border border-green-600 px-4 py-2">
-                                        <p class="text-green-700 font-medium">Contact Us</p>
-                                    </button>
+                            </li>
+                            <li>
+                                <div class="flex flex-col md:flex-row items-center gap-4 justify-center">
+                                    <div class="mb-2 mx-auto lg:mr-10 items-center w-60 lg:w-96">
+                                        <image src="image/about.png"></image>
+                                    </div>
+                                    <div class="items-center py-10">
+                                        <h1 class="text-4xl font-medium text-green-700 mb-3">Corcola Fruit</h1>
+                                        <p class="text-[14px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur eligendi facilis illum magnam officia perferendis, porro quisquam quos soluta! Consectetur ea eum odit vel.</p>
+                                        <p class="text-[14px] mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta minus reprehenderit suscipit!</p>
+                                        <button class="rounded-full border border-green-600 px-4 py-2">
+                                            <p class="text-green-700 font-medium">Contact Us</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex flex-col md:flex-row items-center gap-4 justify-center">
+                                    <div class="mb-2 mx-auto lg:mr-10 items-center w-60 lg:w-96">
+                                        <image src="image/about.png"></image>
+                                    </div>
+                                    <div class="items-center py-10">
+                                        <h1 class="text-4xl font-medium text-green-700 mb-3">Corcola Fruit</h1>
+                                        <p class="text-[14px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur eligendi facilis illum magnam officia perferendis, porro quisquam quos soluta! Consectetur ea eum odit vel.</p>
+                                        <p class="text-[14px] mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta minus reprehenderit suscipit!</p>
+                                        <button class="rounded-full border border-green-600 px-4 py-2">
+                                            <p class="text-green-700 font-medium">Contact Us</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex flex-col md:flex-row items-center gap-4 justify-center">
+                                    <div class="mb-2 mx-auto lg:mr-10 items-center w-60 lg:w-96">
+                                        <image src="image/about.png"></image>
+                                    </div>
+                                    <div class="items-center py-10">
+                                        <h1 class="text-4xl font-medium text-green-700 mb-3">Corcola Fruit</h1>
+                                        <p class="text-[14px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequatur eligendi facilis illum magnam officia perferendis, porro quisquam quos soluta! Consectetur ea eum odit vel.</p>
+                                        <p class="text-[14px] mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta minus reprehenderit suscipit!</p>
+                                        <button class="rounded-full border border-green-600 px-4 py-2">
+                                            <p class="text-green-700 font-medium">Contact Us</p>
+                                        </button>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <!--<div class="w-2/12 flex items-center">
+                    <div class="w-1/12 flex items-center">
                         <div class="w-full">
-                            <button>
+                            <button onclick="next()">
                                 <img src="image/right-arrow.png" width="20" height="20" alt="">
                             </button>
                         </div>
-                    </div>-->
+                    </div>
                 </div>
             </div>
         </div>
@@ -225,6 +271,33 @@
             el: '.swiper-scrollbar',
         },
         });
+    </script>
+    <script>
+        const sliderContainer = document.getElementById('sliderContainer')
+        const slider = document.getElementById('slider')
+        let card = slider.getElementsByTagName('li')
+
+        let sliderContainerWidth = sliderContainer.clientWidth
+        let elementToShow =1
+        let cardWidth = sliderContainerWidth/elementToShow;
+
+        slider.style.width = card.length*cardWidth+'px';
+
+        for (let i = 0; i< card.length; i++){
+            const e = card[i]
+            e.style.width =cardWidth+'px'
+        }
+        function prev(){
+            if (+slider.style.marginLeft.slice(0, -2.5) !== 0)
+            slider.style.marginLeft =((+slider.style.marginLeft.slice(0, -2.5))+cardWidth)+'px'
+        }
+        function next(){
+            if(+slider.style.marginLeft.slice(0,-2.5) !== -cardWidth*(card.length-elementToShow))
+                slider.style.marginLeft = ((+slider.style.marginLeft.slice(0, -2.5)) - cardWidth) + 'px'
+        }
+        function auto(){
+
+        }
     </script>
 </body>
 </html>
